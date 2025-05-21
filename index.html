@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUPAS 2025</title>
+  <meta name="description" content="Ejemplo de página HTML básica con saludo de JA Perú.">
+  <style>
+    :root {
+      --primary-color: #1abc9c;
+      --text-color: #2c3e50;
+      --background-color: #ecf0f1;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-in-out;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--primary-color);
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 id="saludo">¡Hola Confi 2025!</h1>
+    <button onclick="cambiarMensaje()">Cambiar Mensaje</button>
+  </main>
+
+  <script>
+    const mensajes = [
+      "¡Bienvenidos a JUPAS!",
+      "¡Hola desde la Resurrección!",
+      "¡Ánimos en este proceso!",
+      "¡Bienvenido a tu camino con Jesús!",
+      "¡Empezar de nuevo!"
+    ];
+
+    function cambiarMensaje() {
+      const index = Math.floor(Math.random() * mensajes.length);
+      document.getElementById("saludo").textContent = mensajes[index];
+    }
+  </script>
+</body>
+</html>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
